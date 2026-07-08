@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #f7f8fa;
+  line-height: 1.6;
+}
+
+header {
+  background: #0b1f3a;
+  color: white;
+  padding: 60px 12%;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+nav {
+  background: white;
+  padding: 16px 12%;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #0b1f3a;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 12%;
+}
+
+.hero {
+  background: white;
+}
+
+h2 {
+  font-size: 32px;
+  color: #0b1f3a;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.tag {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 12px 20px;
+  background: #0b1f3a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.buttons a:hover {
+  background: #163b6d;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.small-card {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background: #0b1f3a;
+  color: white;
+  padding: 30px 12%;
+  font-size: 14px;
+}
+
+footer p {
+  max-width: 900px;
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}
