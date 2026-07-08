@@ -1,49 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #111827;
   background: #f5f7fa;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .hero {
-  background: linear-gradient(135deg, #071b33, #0d2b4f);
+  background: linear-gradient(135deg, #071b33, #102f55);
   color: white;
-  padding: 70px 10%;
+  padding-bottom: 70px;
+}
+
+.top-nav {
+  padding: 22px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a,
+.nav-links button {
+  margin-left: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-links button {
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 5px 9px;
+  border-radius: 20px;
+}
+
+.hero-content {
+  padding: 55px 8% 20px;
+  display: grid;
+  grid-template-columns: 1.7fr 0.8fr;
+  gap: 50px;
+  align-items: center;
 }
 
 .eyebrow {
   color: #9fc5ff;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: 64px;
   margin: 10px 0;
+  line-height: 1.05;
 }
 
 .subtitle {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.info-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.info-line span {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.hero-description {
+  max-width: 760px;
+  color: #d9e6f7;
+  font-size: 17px;
 }
 
 .hero-buttons a,
 .buttons a,
-.cert-card a,
-.small-card a {
+.small-card a,
+.cert-card a {
   display: inline-block;
-  margin: 10px 10px 0 0;
+  margin: 12px 10px 0 0;
   padding: 12px 18px;
   background: #0b1f3a;
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .hero-buttons a {
@@ -51,130 +115,202 @@ body {
   color: #0b1f3a;
 }
 
-.profile-box img {
-  width: 220px;
-  height: 220px;
+.hero-buttons a:first-child {
+  background: #2f80ed;
+  color: white;
+}
+
+.profile-card {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 24px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.profile-card img {
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
 }
 
-nav {
+.profile-card h3 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.stats {
+  margin: -45px 8% 30px;
   background: white;
-  padding: 18px 10%;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
 }
 
-nav a {
-  margin-right: 28px;
-  text-decoration: none;
+.stats div {
+  padding: 28px;
+  text-align: center;
+  border-right: 1px solid #e5e7eb;
+}
+
+.stats div:last-child {
+  border-right: none;
+}
+
+.stats h3 {
+  margin: 0;
+  font-size: 34px;
   color: #0b1f3a;
-  font-weight: bold;
 }
 
-section {
-  padding: 60px 10%;
+.stats p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.dark-section {
+  background: #eef3f8;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 38px;
   color: #0b1f3a;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 0.9fr;
+  gap: 30px;
+}
+
+.side-box,
+.research-card,
+.small-card,
+.cert-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #dde3ea;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+.side-box h3 {
+  margin-top: 0;
+  color: #0b1f3a;
 }
 
 .research-grid,
-.grid {
+.grid,
+.cert-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-.research-card,
-.small-card,
-.cert-card {
-  background: white;
-  padding: 32px;
-  border-radius: 14px;
-  border: 1px solid #dde3ea;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
 .card-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .ticker {
   background: #eef4ff;
   color: #0b1f3a;
   padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: bold;
+  border-radius: 999px;
+  font-weight: 800;
 }
 
 .rating {
   background: #dff5e7;
   color: #137333;
   padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: bold;
+  border-radius: 999px;
+  font-weight: 800;
 }
 
 .research-card h3 {
-  font-size: 28px;
-  margin-bottom: 5px;
+  font-size: 30px;
+  margin: 5px 0;
 }
 
 .meta {
   color: #c0392b;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .thesis {
-  margin: 20px 0;
+  margin: 22px 0;
 }
 
 .thesis span {
   display: inline-block;
   background: #f0f2f5;
-  padding: 7px 10px;
-  border-radius: 6px;
+  padding: 8px 11px;
+  border-radius: 7px;
   margin: 4px;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .coming-soon {
-  opacity: 0.75;
+  opacity: 0.8;
+}
+
+.contact a {
+  color: #0b1f3a;
+  font-weight: 700;
 }
 
 footer {
   background: #071b33;
   color: white;
-  padding: 35px 10%;
+  padding: 36px 8%;
   font-size: 14px;
 }
 
-@media (max-width: 850px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
+@media (max-width: 900px) {
+  .hero-content,
+  .about-grid,
   .research-grid,
-  .grid {
+  .grid,
+  .cert-grid,
+  .stats {
     grid-template-columns: 1fr;
   }
 
-  nav a {
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .top-nav {
+    display: block;
+  }
+
+  .nav-links {
+    margin-top: 14px;
+  }
+
+  .nav-links a,
+  .nav-links button {
     display: inline-block;
-    margin-bottom: 8px;
+    margin: 6px 8px 6px 0;
+  }
+
+  .stats {
+    margin: 20px 8%;
   }
 }

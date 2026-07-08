@@ -3,52 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haoyang Zou | Equity Research</title>
+  <title>Haoyang Zou | Equity Research Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 <header class="hero">
-  <div class="hero-text">
-    <p class="eyebrow">Independent Equity Research Portfolio</p>
-    <h1>Haoyang Zou</h1>
-    <p class="subtitle">Equity Research · Financial Modeling · AI × Finance</p>
-    <p>Institute of Science Tokyo | Industrial Management & Economics</p>
-    <div class="hero-buttons">
-      <a href="#research">View Research</a>
-      <a href="https://www.linkedin.com/in/haoyang-zou-57249a3a7" target="_blank">LinkedIn</a>
+  <nav class="top-nav">
+    <div class="logo">HZ Research</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('zh')">中文</button>
+      <button onclick="setLang('ja')">日本語</button>
     </div>
-  </div>
+  </nav>
 
-  <div class="profile-box">
-    <img src="assets/profile.jpg" alt="Haoyang Zou" />
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="eyebrow" data-en="Independent Equity Research Portfolio" data-zh="独立股票研究作品集" data-ja="独立株式リサーチ・ポートフォリオ">
+        Independent Equity Research Portfolio
+      </p>
+
+      <h1>Haoyang Zou</h1>
+
+      <p class="subtitle"
+         data-en="Equity Research · Financial Modeling · AI × Finance"
+         data-zh="股票研究 · 财务建模 · AI × 金融"
+         data-ja="株式リサーチ · 財務モデリング · AI × 金融">
+        Equity Research · Financial Modeling · AI × Finance
+      </p>
+
+      <div class="info-line">
+        <span>Institute of Science Tokyo</span>
+        <span>Industrial Management & Economics</span>
+        <span>FMVA®</span>
+      </div>
+
+      <p class="hero-description"
+         data-en="I am an undergraduate student focused on equity research, financial modeling, AI infrastructure, cloud computing, and technology-driven investment opportunities."
+         data-zh="我是一名本科生，主要关注股票研究、财务建模、AI基础设施、云计算以及科技驱动型投资机会。"
+         data-ja="私は学部生として、株式リサーチ、財務モデリング、AIインフラ、クラウドコンピューティング、テクノロジー主導の投資機会に関心を持っています。">
+        I am an undergraduate student focused on equity research, financial modeling, AI infrastructure, cloud computing, and technology-driven investment opportunities.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#research" data-en="View Research" data-zh="查看研究" data-ja="リサーチを見る">View Research</a>
+        <a href="assets/oracle-report.pdf" target="_blank" data-en="Download Oracle Report" data-zh="下载Oracle报告" data-ja="Oracleレポートをダウンロード">Download Oracle Report</a>
+        <a href="https://www.linkedin.com/in/haoyang-zou-57249a3a7" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <img src="assets/profile.jpg" alt="Haoyang Zou" />
+      <h3>Haoyang Zou</h3>
+      <p>Institute of Science Tokyo</p>
+      <p>FMVA® |
   </div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#models">Models</a>
-  <a href="#projects">Projects</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am an undergraduate student at the Institute of Science Tokyo, majoring in Industrial Management
-    and Economics. My interests include equity research, financial modeling, AI infrastructure, and
-    technology-driven investment opportunities.
-  </p>
-  <p>
-    This website serves as my independent research portfolio, where I publish company research reports,
-    valuation models, and finance-related projects.
-  </p>
+<section class="stats">
+  <div>
+    <h3>1</h3>
+    <p>Published Report</p>
+  </div>
+  <div>
+    <h3>3</h3>
+    <p>Valuation Methods</p>
+  </div>
+  <div>
+    <h3>6+</h3>
+    <p>Forecast Years</p>
+  </div>
+  <div>
+    <h3>3</h3>
+    <p>Languages</p>
+  </div>
 </section>
 
-<section id="research">
-  <h2>Research Coverage</h2>
+<section id="about" class="section">
+  <h2 data-en="About Me" data-zh="个人介绍" data-ja="自己紹介">About Me</h2>
+
+  <div class="about-grid">
+    <div>
+      <p data-en="I am Haoyang Zou, an undergraduate student at the Institute of Science Tokyo, majoring in Industrial Management and Economics. My academic and professional interests lie at the intersection of finance, technology, and artificial intelligence."
+         data-zh="我是鄒浩楊，目前就读于东京科学大学，专业为工业管理与经济学。我的学术与职业兴趣主要集中在金融、科技与人工智能的交叉领域。"
+         data-ja="私は鄒浩楊です。東京科学大学で工業経営・経済学を専攻している学部生です。金融、テクノロジー、人工知能の交差領域に強い関心を持っています。">
+        I am Haoyang Zou, an undergraduate student at the Institute of Science Tokyo, majoring in Industrial Management and Economics. My academic and professional interests lie at the intersection of finance, technology, and artificial intelligence.
+      </p>
+
+      <p data-en="This website serves as my independent research portfolio, where I publish equity research reports, financial models, valuation work, and AI-related finance projects. My goal is to develop professional-level research skills in equity research, investment banking, and asset management."
+         data-zh="这个网站是我的独立研究作品集，我会在这里发布股票研究报告、财务模型、估值分析以及AI金融相关项目。我的目标是持续提升股票研究、投行和资产管理方向的专业能力。"
+         data-ja="このウェブサイトは、私の独立リサーチ・ポートフォリオです。株式リサーチレポート、財務モデル、バリュエーション分析、AI関連の金融プロジェクトを公開しています。">
+        This website serves as my independent research portfolio, where I publish equity research reports, financial models, valuation work, and AI-related finance projects. My goal is to develop professional-level research skills in equity research, investment banking, and asset management.
+      </p>
+    </div>
+
+    <div class="side-box">
+      <h3>Languages</h3>
+      <ul>
+        <li>Chinese — Native</li>
+        <li>English — Professional Working Proficiency</li>
+        <li>Japanese — Professional Working Proficiency</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section dark-section">
+  <h2 data-en="Research Coverage" data-zh="研究报告" data-ja="リサーチカバレッジ">Research Coverage</h2>
 
   <div class="research-grid">
     <div class="research-card">
@@ -61,8 +128,7 @@
       <p class="meta">NYSE: ORCL · Initiation of Coverage · Target Price: $271</p>
 
       <p>
-        Independent equity research report analyzing Oracle's transformation from an enterprise database
-        company into an AI infrastructure provider through Oracle Cloud Infrastructure.
+        Independent equity research report analyzing Oracle's transformation from an enterprise database company into an AI infrastructure provider through Oracle Cloud Infrastructure.
       </p>
 
       <div class="thesis">
@@ -79,41 +145,27 @@
 
     <div class="research-card coming-soon">
       <h3>Next Coverage</h3>
-      <p>Future reports will cover AI, cloud computing, semiconductors, and Japanese industrial companies.</p>
+      <p>Future research will cover AI, cloud computing, semiconductors, Japanese equities, and global technology companies.</p>
     </div>
   </div>
 </section>
 
-<section id="models">
-  <h2>Financial Modeling</h2>
-  <div class="grid">
-    <div class="small-card">
-      <h3>Three-Statement Model</h3>
-      <p>Revenue forecast, income statement, balance sheet, and cash flow statement.</p>
-    </div>
-    <div class="small-card">
-      <h3>Valuation</h3>
-      <p>DCF, P/E, EV/EBITDA, sensitivity analysis, and football field valuation.</p>
-    </div>
-    <div class="small-card">
-      <h3>Scenario Analysis</h3>
-      <p>Bull, base, and bear case assumptions linked to valuation outputs.</p>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
+<section id="projects" class="section">
   <h2>Projects</h2>
+
   <div class="grid">
     <div class="small-card">
       <h3>AI Equity Research Tool</h3>
-      <p>AI-powered stock analysis and valuation platform.</p>
-      <a href="https://zhy337281-lgtm-finlens-app-5qbamn.streamlit.app/" target="_blank">Open Project</a>
+      <p>AI-powered stock analysis and equity research platform.</p>
+      <a href="PUT_YOUR_AI_TOOL_LINK_HERE" target="_blank">Open Project</a>
     </div>
+
     <div class="small-card">
       <h3>TechLink</h3>
       <p>Career support platform concept for Institute of Science Tokyo students.</p>
+      <a href="https://www.instagram.com/techlink.isct" target="_blank">Instagram</a>
     </div>
+
     <div class="small-card">
       <h3>LoreLens</h3>
       <p>AI travel planning concept based on personality and travel preferences.</p>
@@ -121,27 +173,40 @@
   </div>
 </section>
 
-<section id="certifications">
+<section id="certifications" class="section">
   <h2>Certifications</h2>
-  <div class="cert-card">
-    <h3>FMVA® Certification</h3>
-    <p>Financial Modeling & Valuation Analyst certification.</p>
-    <a href="assets/fmva-certificate.pdf" target="_blank">View Certificate</a>
-  </div>
-</section>
 
-<section id="contact">
+  <div class="cert-grid">
+    <div class="cert-card">
+      <h3>FMVA® Certification</h3>
+      <p>Financial Modeling & Valuation Analyst certification.</p>
+      <a href="assets/fmva-certificate.pdf" target="_blank">View Certificate</a>
+    </div>
+
+
+
+<section id="contact" class="section contact">
   <h2>Contact</h2>
+  <p>Email: add-your-email@example.com</p>
+  <p>Phone: +81 0903449 0094</p>
   <p>LinkedIn: <a href="https://www.linkedin.com/in/haoyang-zou-57249a3a7" target="_blank">Haoyang Zou</a></p>
   <p>GitHub: <a href="https://github.com/zhy337281-lgtm" target="_blank">zhy337281-lgtm</a></p>
 </section>
 
 <footer>
   <p>
-    Disclaimer: All research published on this website is prepared independently for educational and
-    informational purposes only and does not constitute investment advice.
+    Disclaimer: All research published on this website is prepared independently for educational and informational purposes only and does not constitute investment advice.
   </p>
   <p>© 2026 Haoyang Zou</p>
 </footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+    el.textContent = el.getAttribute("data-" + lang);
+  });
+}
+</script>
+
 </body>
 </html>
