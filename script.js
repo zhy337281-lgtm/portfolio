@@ -2,6 +2,14 @@ function setLang(lang){
  if(!['en','zh','ja'].includes(lang))lang='en';
  document.documentElement.lang=lang==='zh'?'zh-CN':lang;
  document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[lang]||el.dataset.en;});
+ if(lang==='ja')document.querySelectorAll('[data-person-name]').forEach(el=>{
+  el.replaceChildren();
+  [['鄒','スウ'],['浩楊','コウヨウ']].forEach(([name,reading],index)=>{
+   if(index)el.append(document.createTextNode(' '));
+   const ruby=document.createElement('ruby'),rt=document.createElement('rt');
+   ruby.append(document.createTextNode(name));rt.textContent=reading;ruby.append(rt);el.append(ruby);
+  });
+ });
  document.querySelectorAll('[data-lang]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.lang===lang)));
  try{localStorage.setItem('portfolio-language',lang);}catch{}
 }
