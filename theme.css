@@ -5,3 +5,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
 
 .program-report{margin-top:9px}.wordmark:lang(ja){font-family:Georgia,serif;font-size:23px}h1:lang(ja){font-size:clamp(35px,4.7vw,65px);line-height:1.3}h1:lang(zh-CN){font-size:clamp(55px,6vw,80px)}@media(max-width:700px){.wordmark:lang(ja){font-size:16px}.wordmark:lang(zh-CN){font-size:23px}h1:lang(ja){font-size:35px}}
+
+/* Single-line Japanese name and dedicated contact section. */
+h1:lang(ja){white-space:nowrap;font-size:clamp(24px,3.15vw,44px)}.wordmark:lang(ja){white-space:nowrap;font-size:20px}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:85px;align-items:start}.contact-layout .display-title{margin-top:0}.contact-layout .button{margin-top:12px}.contact-links a{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px solid var(--line);font-size:13px}.contact-links a:first-child{padding-top:0}.contact-links a>span:first-child{color:var(--muted)}.contact-links a:hover{color:#365e9c}
+@media(max-width:950px){.nav-right{gap:17px}.nav-links{gap:15px}.contact-layout{gap:35px}}
+@media(max-width:700px){h1:lang(ja){font-size:clamp(16px,5.15vw,30px)}.wordmark:lang(ja){font-size:clamp(11px,3.4vw,15px)}.contact-layout{grid-template-columns:1fr;gap:30px}.contact-links a{font-size:12px;gap:12px}.nav-right{gap:8px}.nav{gap:10px}}
